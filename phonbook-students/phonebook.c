@@ -152,6 +152,7 @@ void delet(void)
    printf("\n  ::Enter last name: ");
    len_size = getline(&input,&len,stdin);
    strncpy(dlname_string,input,31);
+   free(input);
    
    for (i = 0; i < last; i++) {
     if (strcmp (dfname_string, A[i].fname) == 0 && strcmp (dlname_string, A[i].lname) == 0 ) {
